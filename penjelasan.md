@@ -136,23 +136,35 @@ Jika RMS_norm ≥ Threshold  → KONTRAKSI
 
 ---
 
-### ⏭️ LANGKAH 6 — Perbandingan dengan TOF Scan
-**Status: BELUM (butuh data TOF Scan)**
+### ✅ LANGKAH 6 — Perbandingan dengan TOF Scan (Ground Truth)
+**Status: SELESAI ✅**
 
-**Apa:** Hasil klasifikasi MyoWare (Relaksasi/Kontraksi per window) dibandingkan dengan keputusan klinis dari **TOF Scan** pada waktu yang sama.
+**Apa:** Membandingkan hasil klasifikasi MyoWare dengan data pembacaan alat medis acuan **IDMed TOFscan** yang didapat langsung dari tangkapan layar monitor saat pengukuran.
 
-**Caranya:**
-- TOF Ratio < 0.90 → Otot dalam kondisi **Relaksasi/terblokade**
-- TOF Ratio ≥ 0.90 → Otot sudah **Kontraksi/pulih**
+#### 📸 Tabel Master Pembacaan Alat TOFscan (Ground Truth):
 
-Kemudian dibuat tabel berpasangan:
-| Waktu | MyoWare | TOF Scan |
-|---|---|---|
-| Menit ke-5 | Relaksasi | Relaksasi |
-| Menit ke-15 | Kontraksi | Relaksasi |
-| dst... | ... | ... |
-
-> ⚠️ **Kamu perlu data TOF Scan dari rekaman operasi** untuk melanjutkan langkah ini!
+| Pasien | Nama File | Rasio TOF (%) | Twitch Count | Mode Alat | Status Klinis TOF | Label Kelas |
+|---|---|:---:|:---:|:---:|---|:---:|
+| **Pasien 10** | `P10_ANESTESI_HASIL.csv` | **60%** | `4/4` | Auto TOF | Pre-block / Baseline | Kontraksi |
+| | `P10_DATA1_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P10_DATA2_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P10_DATA3_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P10_DATA4_HASIL.csv` | **0%** | `2/4` | Auto TOF | Moderate Block | Relaksasi |
+| **Pasien 11** | `P11_ANESTESI_HASIL.csv` | **95%** | `4/4` | Auto TOF | Baseline / Normal | Kontraksi |
+| | `P11_DATA1_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P11_DATA2_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P11_DATA3_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P11_DATA4_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| **Pasien 12** | `P12_ANESTESI_HASIL.csv` | **80%** | `4/4` | Auto TOF | Baseline / Normal | Kontraksi |
+| | `P12_DATA1_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P12_DATA2_HASIL.csv` | **0%** | `1/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P12_DATA3_HASIL.csv` | **0%** | `2/4` | Auto TOF | Moderate Block | Relaksasi |
+| | `P12_DATA4_HASIL.csv` | **37%** | `4/4` | Single TOF | Partial Recovery | Kontraksi |
+| **Pasien 13** | `P13_ANESTESI_HASIL.csv` | **0%** | `0/4` | Auto TOF | Deep Block | Relaksasi |
+| | `P13_DATA1_HASIL.csv` | **51%** | `4/4` | Single TOF | Partial Recovery | Kontraksi |
+| | `P13_DATA2_HASIL.csv` | **36%** | `4/4` | Single TOF | Partial Recovery | Kontraksi |
+| | `P13_DATA3_HASIL.csv` | **27%** | `4/4` | Single TOF | Partial Recovery | Kontraksi |
+| | `P13_DATA4_HASIL.csv` | **0%** | `1/4` | Single TOF | Deep Block | Relaksasi |
 
 ---
 
