@@ -3,7 +3,7 @@
 
 % Konfigurasi
 Fs = 1000; % Sampling frequency
-raw_dir = 'C:\Users\FILKOM\Downloads\utama\Data_CSV';
+raw_dir = 'C:\Users\FILKOM\Downloads\utama\Data_baru';
 out_base_dir = 'C:\Users\FILKOM\Downloads\utama\preprocessing\versi_B\matlab\output';
 out_data_dir = fullfile(out_base_dir, 'data');
 out_plots_dir = fullfile(out_base_dir, 'plots');

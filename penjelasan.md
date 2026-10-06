@@ -204,7 +204,7 @@ Kemudian dibuat tabel berpasangan:
 ```
 C:\Users\FILKOM\Downloads\utama\
 │
-├── Data_CSV/                          ← DATA RAW (JANGAN DIUBAH!)
+├── Data_baru/                          ← DATA RAW (JANGAN DIUBAH!)
 │   └── [56 file CSV hasil rekaman]
 │
 ├── preprocessing/
@@ -441,7 +441,7 @@ output/
 ```
 C:\Users\FILKOM\Downloads\utama\
 │
-├── Data_CSV/                                  ← RAW (JANGAN DIUBAH)
+├── Data_baru/                                  ← RAW (JANGAN DIUBAH)
 │   └── [56 file CSV]
 │
 ├── preprocessing/
