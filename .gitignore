@@ -1,0 +1,16 @@
+# Mengabaikan data CSV mentah
+Data_CSV/
+
+# Mengabaikan hasil data CSV setelah pre-processing
+**/output/data/
+
+# Mengabaikan data CSV hasil ekstraksi per window
+**/output/features/data/
+
+# Mengabaikan environment Python jika ada
+venv/
+__pycache__/
+*.pyc
+
+# Folder sementara
+temp.py
