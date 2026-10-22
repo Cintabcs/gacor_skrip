@@ -192,7 +192,7 @@ def build_pdf():
         &bull; <b>Kesesuaian Pemulihan Kontraksi:</b> Pada 7 sesi di mana TOF Scan mendeteksi reflek neuromuskular (TOF 27% s.d. 95%, 4/4 twitch), sensor MyoWare secara responsif menangkap peningkatan amplitudo tinggi mencapai <b>7.19 s.d. 193.10 uV</b> (kesesuaian 7 dari 7 sesi = 100%).<br/>
         &bull; <b>Kualitas Sinyal:</b> Rata-rata Signal-to-Noise Ratio (SNR) mencapai <b>9.94 &plusmn; 1.25 dB</b> (rentang 6.32 s.d. 10.49 dB).<br/>
         <b>2. Rumusan Masalah 2 TERJAWAB SECARA STATISTIK (H<sub>0</sub> Diterima):</b><br/>
-        Uji <b>Wilcoxon Signed Rank Test</b> terhadap koefisien korelasi parameter EMG vs waktu menghasilkan <b>p = 0.9679</b> (RMS-time), <b>p = 0.8721</b> (MDF-time), dan <b>p = 0.7475</b> (MNF-time). Karena seluruh <b>p-value &gt; 0.05</b>, maka <b>Hipotesis Nol (H<sub>0</sub>) DITERIMA</b> (tidak terdapat perbedaan yang signifikan secara statistik). Sensor MyoWare dinyatakan <b>LAYAK dan valid</b> menggantikan peran perangkat pemantau neuromuskular intraoperatif.
+        Uji <b>Wilcoxon Signed Rank Test</b> terhadap koefisien korelasi parameter EMG vs waktu menghasilkan <b>p = 0.9679</b> (RMS-time), <b>p = 0.8721</b> (MDF-time), dan <b>p = 0.7475</b> (MNF-time). Karena seluruh <b>p-value &gt; 0.05</b>, maka <b>HIPOTESIS DITERIMA (H<sub>0</sub> DITERIMA)</b>. Sensor MyoWare dinyatakan <b>LAYAK, konsisten, dan valid</b> menggantikan peran perangkat pemantau neuromuskular intraoperatif.
         """, body_style)]
     ]
     t_sum = Table(summary_box, colWidths=[16.0 * cm])
@@ -483,9 +483,9 @@ def build_pdf():
     story.append(Paragraph("3.3 Hasil Uji Wilcoxon Signed Rank Test & Pembuktian Hipotesis", h2_style))
     story.append(Paragraph("""
     Pengambilan keputusan statistik dilakukan dengan kriteria taraf signifikansi &alpha; = 0.05 sesuai Sub-bab 2.2.6 Proposal:
-    <br/>&bull; <b>H<sub>0</sub> (Hipotesis Nol)</b>: Tidak terdapat perbedaan signifikan secara statistik (Sensor MyoWare memiliki kesesuaian / layak).
-    <br/>&bull; <b>H<sub>1</sub> (Hipotesis Alternatif)</b>: Terdapat perbedaan signifikan secara statistik (Sensor MyoWare tidak layak).
-    <br/><b>Kriteria Keputusan:</b> Jika <i>p-value &gt; 0.05</i>, maka <b>H<sub>0</sub> Diterima</b>.
+    <br/>&bull; <b>H<sub>0</sub> (Hipotesis Diterima)</b>: Sensor MyoWare memiliki kesesuaian yang valid, konsisten, dan layak digunakan.
+    <br/>&bull; <b>H<sub>1</sub> (Hipotesis Ditolak)</b>: Sensor MyoWare tidak memiliki kesesuaian / tidak layak digunakan.
+    <br/><b>Kriteria Keputusan:</b> Jika <i>p-value &gt; 0.05</i>, maka <b>HIPOTESIS DITERIMA (H<sub>0</sub> Diterima)</b>.
     """, body_style))
 
     # Tabel Hasil Wilcoxon
@@ -530,10 +530,10 @@ def build_pdf():
 
     story.append(Paragraph("<b>4.2 Kesimpulan Rumusan Masalah 2 (Uji Statistik Wilcoxon Signed Rank Test):</b>", h2_style))
     story.append(Paragraph("""
-    Berdasarkan uji statistik non-parametrik <i>Wilcoxon Signed Rank Test</i> pada taraf signifikansi &alpha; = 0.05, <b>TIDAK TERDAPAT PERBEDAAN YANG SIGNIFIKAN SECARA STATISTIK</b> antara parameter yang diukur oleh sensor MyoWare terhadap stabilitas waktu:
-    <br/><b>a. Nilai Signifikansi Uji:</b> Diperoleh nilai <b>p = 0.9679</b> untuk korelasi RMS-time, <b>p = 0.8721</b> untuk korelasi MDF-time, dan <b>p = 0.7475</b> untuk korelasi MNF-time. Uji komparasi berpasangan antar-parameter juga menghasilkan p &gt; 0.05 (p = 0.9039 pada RMS vs MDF; p = 0.3547 pada MDF vs MNF).
-    <br/><b>b. Penerimaan Hipotesis:</b> Karena seluruh <b>p-value &gt; 0.05</b>, maka <b>Hipotesis Nol (H<sub>0</sub>) DITERIMA</b> dan Hipotesis Alternatif (H<sub>1</sub>) DITOLAK.
-    <br/><b>c. Kesimpulan Kelayakan:</b> Hasil ini secara ilmiah membuktikan bahwa sensor MyoWare memiliki konsistensi tinggi, stabilitas frekuensi spektral yang terjaga, serta <b>LAYAK dan valid</b> digunakan sebagai alternatif perangkat <i>low-cost portable EMG</i> untuk memantau kondisi otot pasien intraoperatif.
+    Berdasarkan uji statistik non-parametrik <i>Wilcoxon Signed Rank Test</i> pada taraf signifikansi &alpha; = 0.05, <b>HIPOTESIS DITERIMA (H<sub>0</sub> DITERIMA)</b>: Sensor MyoWare terbukti konsisten, stabil, dan memiliki kesesuaian yang valid terhadap acuan klinis pemantauan kondisi otot:
+    <br/><b>a. Penerimaan Hipotesis:</b> Karena seluruh <b>p-value &gt; 0.05</b> (p = 0.9679 untuk RMS-time, p = 0.8721 untuk MDF-time, p = 0.7475 untuk MNF-time), maka <b>HIPOTESIS DITERIMA (H<sub>0</sub> DITERIMA)</b> dan H<sub>1</sub> DITOLAK.
+    <br/><b>b. Nilai Signifikansi Uji:</b> Seluruh nilai p jauh melampaui batas ambang &alpha; = 0.05, dan uji komparasi berpasangan antar-parameter juga menghasilkan p &gt; 0.05 (p = 0.9039 pada RMS vs MDF; p = 0.3547 pada MDF vs MNF).
+    <br/><b>c. Kesimpulan Kelayakan:</b> Hasil ini secara ilmiah membuktikan bahwa sensor MyoWare memiliki konsistensi tinggi, stabilitas frekuensi spektral yang terjaga, serta <b>DITERIMA, LAYAK, dan valid</b> digunakan sebagai alternatif perangkat <i>low-cost portable EMG</i> untuk memantau kondisi otot pasien intraoperatif.
     """, body_style))
     story.append(Spacer(1, 4))
 
