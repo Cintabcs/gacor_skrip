@@ -1,0 +1,6 @@
+Uji_Hipotesis,Median_Spearman,P_Value_Wilcoxon,Keterangan
+RMS-time vs 0,0.0536544397947921,0.967900048613635,Tidak Signifikan (p >= 0.05)
+MDF-time vs 0,0.00459254120395771,0.872118031390054,Tidak Signifikan (p >= 0.05)
+MNF-time vs 0,0.00467150730469775,0.747500077768004,Tidak Signifikan (p >= 0.05)
+RMS-time vs MDF-time,NaN,0.903907632516725,Tidak Signifikan (p >= 0.05)
+MDF-time vs MNF-time,NaN,0.354669395315246,Tidak Signifikan (p >= 0.05)
